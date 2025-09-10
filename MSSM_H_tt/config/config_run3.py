@@ -813,24 +813,24 @@ def add_run3(ana: od.Analysis,
         #"met_phi_corr"            : (f"{jsonpog_dir}JME/{cfg.x.year}{tag}/met{cfg.x.year}.json.gz", "v2"), #FIXME: there is no json present in the jsonpog-integration for this year, I retrieve the json frm: https://cms-talk.web.cern.ch/t/2022-met-xy-corrections/53414/2 but it seems corrupted
     })
     
-    from pathlib import Path
-    #Insert here the mass you want to use 
-    cfg.x.bdt_mass = {
-            "mass": 100,
-        }
-    bdt_eos_path = "/eos/user/j/jmalvaso/SWAN_projects/XGBoost_MSSM/"
+    # from pathlib import Path
+    # #Insert here the mass you want to use 
+    # cfg.x.bdt_mass = {
+    #         "mass": 100,
+    #     }
+    # bdt_eos_path = "/eos/user/j/jmalvaso/SWAN_projects/XGBoost_MSSM/"
 
-    for mass in signal_masses:
-        even_path = f"{bdt_eos_path}M{mass}/bst_model_M{mass}_even.json"
-        odd_path  = f"{bdt_eos_path}M{mass}/bst_model_M{mass}_odd.json"
+    # mass = cfg.x.bdt_mass["mass"]
+    # even_path = f"{bdt_eos_path}M{mass}/bst_model_M{mass}_even.json"
+    # odd_path  = f"{bdt_eos_path}M{mass}/bst_model_M{mass}_odd.json"
 
-        if not Path(even_path).is_file():
-            raise FileNotFoundError(f"Missing model (even) for mass {mass}: {even_path}")
-        if not Path(odd_path).is_file():
-            raise FileNotFoundError(f"Missing model (odd) for mass {mass}: {odd_path}")
+    # if not Path(even_path).is_file():
+    #     raise FileNotFoundError(f"Missing model (even) for mass {mass}: {even_path}")
+    # if not Path(odd_path).is_file():
+    #     raise FileNotFoundError(f"Missing model (odd) for mass {mass}: {odd_path}")
 
-        cfg.x.external_files[f"ml_model_even_{mass}"] = even_path
-        cfg.x.external_files[f"ml_model_odd_{mass}"]  = odd_path
+    # cfg.x.external_files[f"ml_model_even_{mass}"] = even_path
+    # cfg.x.external_files[f"ml_model_odd_{mass}"]  = odd_path
 
     # --------------------------------------------------------------------------------------------- #
     # electron settings

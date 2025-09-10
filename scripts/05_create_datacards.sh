@@ -1,8 +1,8 @@
 #!/bin/bash
-source ./common_run3.sh #to access set_common_vars() function
+source ./common_run3_MSSM.sh #to access set_common_vars() function
 #The following function defines config, processes, version and datasets variables
 set_common_vars "$1"
-prod_version=bdt_check
+prod_version=desy_dev
 args=(
         --config $config
         #-processes $processes

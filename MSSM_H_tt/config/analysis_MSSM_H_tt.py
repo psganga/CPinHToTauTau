@@ -28,7 +28,7 @@ if default_sandbox.sandbox_type == "bash" and default_sandbox.name not in ana.x.
 # files of cmssw sandboxes that might be required by remote tasks
 # (used in cf.HTCondorWorkflow)
 ana.x.cmssw_sandboxes = [
-    "$CF_BASE/sandboxes/cmssw_default.sh",
+    # "$CF_BASE/sandboxes/cmssw_default.sh",
 ]
 
 # config groups for conveniently looping over certain configs

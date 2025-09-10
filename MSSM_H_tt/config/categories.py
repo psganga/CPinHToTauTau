@@ -186,9 +186,9 @@ def add_categories(config: od.Config,
             'selection': [f"bdt_cat_wj_M{m}"],
             'label': f" \n bdt cat wj (M={m})",
         })
+    
+    create_child_categories(config,
+                            parent_categories=config.categories.names(),
+                            child_category_map=bdt_cats_map)
+    
 
-
-    create_child_categories(
-    config,
-    parent_categories=config.categories.names(),
-    child_category_map=bdt_cats_map,)

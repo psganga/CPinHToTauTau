@@ -33,6 +33,7 @@ from MSSM_H_tt.production.aux_columns import channel_id
 from MSSM_H_tt.selection.jets import jet_veto_map
 from MSSM_H_tt.production.btag import btag_weight
 from MSSM_H_tt.production.aux_columns import jets_taggable
+from MSSM_H_tt.selection.met_cov_check import met_cov_check
 
 np = maybe_import("numpy")
 ak = maybe_import("awkward")
@@ -66,6 +67,7 @@ coffea = maybe_import("coffea")
         btag_weight,
         jets_taggable,
         met_nanoAOD_filters,
+        met_cov_check,
     },
     produces={
         # selectors / producers whose newly created columns should be kept
@@ -90,6 +92,7 @@ coffea = maybe_import("coffea")
         btag_weight,
         jets_taggable,
         met_nanoAOD_filters,
+        met_cov_check,
         "category_ids",
         "OC_lepton_veto",
     },
@@ -204,6 +207,11 @@ def main(
     events, OC_lepton_veto_results = self[OC_lepton_veto](events,
                                                         OC_veto_electron_indices,
                                                         OC_veto_muon_indices)
+    
+    # Check for non-finite values of PuppiMET.covXX/XY/YY
+    events, met_cov_check_results = self[met_cov_check](events)
+
+    results += met_cov_check_results
     
     #Check arrays for np.nan values and mask them
     events, nan_mask_res = self[mask_nans](events)

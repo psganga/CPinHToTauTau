@@ -97,7 +97,7 @@ def add_hist_hooks(config: od.Config) -> None:
                     data_hists.append(h)
                 elif proc.is_mc and not proc.has_tag("signal"):
                     mc_hists.append(h)
-            
+            #from IPython import embed; embed()
             mc_hist = sum(mc_hists[1:], mc_hists[0].copy())
             data_hist = sum(data_hists[1:], data_hists[0].copy())
             
@@ -119,7 +119,7 @@ def add_hist_hooks(config: od.Config) -> None:
                 den = ak.sum(data_den.values() - mc_den.values())
 
                 if (num > 0) and (den > 0):
-                    tf = num/den
+                    tf = num/den #MAKE THIS to 1. It may help improving the QCD estimation
                 else:
                     tf = 1. 
             

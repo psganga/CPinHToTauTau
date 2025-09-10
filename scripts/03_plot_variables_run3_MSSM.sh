@@ -12,6 +12,19 @@ args=(
         --cf.SelectEvents-workflow $workflow
         --cf.ReduceEvents-workflow $workflow
         --cf.MergeReducedEvents-workflow $workflow
+        --cf.MergeSelectionStats-workflow $workflow
+        --cf.ProvideReducedEvents-workflow $workflow
+        --cf.CalibrateEvents-version $version
+        --cf.SelectEvents-version $version
+        --cf.ReduceEvents-version $version
+        --cf.MergeReducedEvents-version $version
+        --cf.MergeSelectionStats-version $version
+        --cf.ProvideReducedEvents-version $version
+        --version $prod_version
+        --cf.ProduceColumns-workflow local
+        --cf.ProduceColumns-version  $prod_version
+        --cf.MergeHistograms-workflow htcondor
+        --cf.MergeHistograms-version  $prod_version
         --variables $variables
         --file-types pdf,png
 	    --hist-hooks good_old_abcd

@@ -2,8 +2,8 @@
 
 set_common_vars() {
 
-version="desy_dev"
-
+version="summer_project"
+prod_version="desy_dev"
 categories_mutau="cat_mutau_sr"
 variables_mutau='mutau_lep0_pt,mutau_lep0_eta,mutau_lep0_phi,mutau_lep0_ip_sig,mutau_lep1_pt,mutau_lep1_eta,mutau_lep1_phi,mutau_lep1_mass,mutau_lep1_decayModePNet,mutau_lep1_decayMode,mutau_mt,mutau_mvis,mutau_delta_eta,mutau_delta_r,mutau_pt,puppi_met_pt,puppi_met_phi'
 
@@ -11,15 +11,15 @@ categories_etau="cat_etau_sr"
 # cat_etau_sr_no_mT,cat_etau_sr_b_jets,cat_etau_sr_b_jets_no_mT,cat_etau_sr_0_bjets,cat_etau_sr_0_bjets_endcap_tau,cat_etau_sr_0_bjets_barrel_tau,cat_etau_sr_0_bjets_no_mt,cat_etau_sr_0_bjets_endcap_tau_no_mt,cat_etau_sr_0_bjets_barrel_tau_no_mt,cat_etau_sr_1_bjets,cat_etau_sr_1_bjets_endcap_tau,cat_etau_sr_1_bjets_barrel_tau,cat_etau_sr_1_bjets_no_mt,cat_etau_sr_1_bjets_endcap_tau_no_mt,cat_etau_sr_1_bjets_barrel_tau_no_mt,cat_etau_sr_2_bjets,cat_etau_sr_2_bjets_endcap_tau,cat_etau_sr_2_bjets_barrel_tau,cat_etau_sr_2_bjets_no_mt,cat_etau_sr_2_bjets_endcap_tau_no_mt,cat_etau_sr_2_bjets_barrel_tau_no_mt"
 variables_etau='mjj,N_b_jets,N_jets_pT_20_eta_2_5_Tight,mjj,N_jets_pT_20_eta_4_7_Tight,Leading_jet_pt,Subleading_jet_pt,delta_eta_jj,etau_lep0_pt,etau_lep0_eta,etau_lep0_phi,etau_lep0_ip_sig,etau_lep1_pt,etau_lep1_eta,etau_lep1_phi,etau_lep1_mass,etau_lep1_decayModePNet,etau_lep1_decayMode,etau_mt,etau_mvis,etau_delta_r,etau_pt,puppi_met_pt,puppi_met_phi'
 
-categories_emu="cat_emu_sr,cat_emu_sr__nj0__dzl,cat_emu_sr__nj0__dzm,cat_emu_sr__nj1__dzl,cat_emu_sr__nj1__dzm" #,cat_emu_sr__nj2__dzl,cat_emu_sr__nj2__dzm,cat_emu_sr__nj2__dzh"
+categories_emu="cat_emu_sr,cat_cat_emu_sr__bdt_sig_M60,cat_emu_sr__bdt_sig_M65,cat_emu_sr__bdt_sig_M70,cat_emu_sr__bdt_sig_M75,cat_emu_sr__bdt_sig_M80,cat_emu_sr__bdt_sig_M85,cat_emu_sr__bdt_sig_M90,cat_emu_sr__bdt_sig_M95,cat_emu_sr__bdt_sig_M100,cat_emu_sr__bdt_sig_M105,cat_emu_sr__bdt_sig_M110,cat_emu_sr__bdt_sig_M115,cat_emu_sr__bdt_sig_M120,cat_emu_sr__bdt_sig_M125,cat_emu_sr__bdt_sig_M130,cat_emu_sr__bdt_sig_M135,cat_emu_sr__bdt_sig_M140,cat_emu_sr__bdt_sig_M160,cat_emu_sr__bdt_sig_M180,cat_emu_sr__bdt_sig_M200,cat_emu_sr__bdt_sig_M250,cat_emu_sr__bdt_sig_M300,cat_emu_sr__bdt_sig_M350,cat_emu_sr__bdt_sig_M400,cat_emu_sr__bdt_sig_M450,cat_emu_sr__bdt_sig_M500,cat_emu_sr__bdt_sig_M600,cat_emu_sr__bdt_sig_M700,cat_emu_sr__bdt_sig_M800,cat_emu_sr__bdt_sig_M900,cat_emu_sr__bdt_sig_M1000,cat_emu_sr__bdt_sig_M1100,cat_emu_sr__bdt_sig_M1200,cat_emu_sr__bdt_sig_M1400,cat_emu_sr__bdt_sig_M1600,cat_emu_sr__bdt_sig_M1800,cat_emu_sr__bdt_sig_M2000,cat_emu_sr__bdt_sig_M2300,cat_emu_sr__bdt_sig_M2600,cat_emu_sr__bdt_sig_M2900,cat_emu_sr__bdt_sig_M3200,cat_emu_sr__bdt_sig_M3500,cat_emu_sr__bdt_dy_M60,cat_emu_sr__bdt_dy_M65,cat_emu_sr__bdt_dy_M70,cat_emu_sr__bdt_dy_M75,cat_emu_sr__bdt_dy_M80,cat_emu_sr__bdt_dy_M85,cat_emu_sr__bdt_dy_M90,cat_emu_sr__bdt_dy_M95,cat_emu_sr__bdt_dy_M100,cat_emu_sr__bdt_dy_M105,cat_emu_sr__bdt_dy_M110,cat_emu_sr__bdt_dy_M115,cat_emu_sr__bdt_dy_M120,cat_emu_sr__bdt_dy_M125,cat_emu_sr__bdt_dy_M130,cat_emu_sr__bdt_dy_M135,cat_emu_sr__bdt_dy_M140,cat_emu_sr__bdt_dy_M160,cat_emu_sr__bdt_dy_M180,cat_emu_sr__bdt_dy_M200,cat_emu_sr__bdt_dy_M250,cat_emu_sr__bdt_dy_M300,cat_emu_sr__bdt_dy_M350,cat_emu_sr__bdt_dy_M400,cat_emu_sr__bdt_dy_M450,cat_emu_sr__bdt_dy_M500,cat_emu_sr__bdt_dy_M600,cat_emu_sr__bdt_dy_M700,cat_emu_sr__bdt_dy_M800,cat_emu_sr__bdt_dy_M900,cat_emu_sr__bdt_dy_M1000,cat_emu_sr__bdt_dy_M1100,cat_emu_sr__bdt_dy_M1200,cat_emu_sr__bdt_dy_M1400,cat_emu_sr__bdt_dy_M1600,cat_emu_sr__bdt_dy_M1800,cat_emu_sr__bdt_dy_M2000,cat_emu_sr__bdt_dy_M2300,cat_emu_sr__bdt_dy_M2600,cat_emu_sr__bdt_dy_M2900,cat_emu_sr__bdt_dy_M3200,cat_emu_sr__bdt_dy_M3500,cat_emu_sr__bdt_tt_M60,cat_emu_sr__bdt_tt_M65,cat_emu_sr__bdt_tt_M70,cat_emu_sr__bdt_tt_M75,cat_emu_sr__bdt_tt_M80,cat_emu_sr__bdt_tt_M85,cat_emu_sr__bdt_tt_M90,cat_emu_sr__bdt_tt_M95,cat_emu_sr__bdt_tt_M100,cat_emu_sr__bdt_tt_M105,cat_emu_sr__bdt_tt_M110,cat_emu_sr__bdt_tt_M115,cat_emu_sr__bdt_tt_M120,cat_emu_sr__bdt_tt_M125,cat_emu_sr__bdt_tt_M130,cat_emu_sr__bdt_tt_M135,cat_emu_sr__bdt_tt_M140,cat_emu_sr__bdt_tt_M160,cat_emu_sr__bdt_tt_M180,cat_emu_sr__bdt_tt_M200,cat_emu_sr__bdt_tt_M250,cat_emu_sr__bdt_tt_M300,cat_emu_sr__bdt_tt_M350,cat_emu_sr__bdt_tt_M400,cat_emu_sr__bdt_tt_M450,cat_emu_sr__bdt_tt_M500,cat_emu_sr__bdt_tt_M600,cat_emu_sr__bdt_tt_M700,cat_emu_sr__bdt_tt_M800,cat_emu_sr__bdt_tt_M900,cat_emu_sr__bdt_tt_M1000,cat_emu_sr__bdt_tt_M1100,cat_emu_sr__bdt_tt_M1200,cat_emu_sr__bdt_tt_M1400,cat_emu_sr__bdt_tt_M1600,cat_emu_sr__bdt_tt_M1800,cat_emu_sr__bdt_tt_M2000,cat_emu_sr__bdt_tt_M2300,cat_emu_sr__bdt_tt_M2600,cat_emu_sr__bdt_tt_M2900,cat_emu_sr__bdt_tt_M3200,cat_emu_sr__bdt_tt_M3500,cat_emu_sr__bdt_wj_M60,cat_emu_sr__bdt_wj_M65,cat_emu_sr__bdt_wj_M70,cat_emu_sr__bdt_wj_M75,cat_emu_sr__bdt_wj_M80,cat_emu_sr__bdt_wj_M85,cat_emu_sr__bdt_wj_M90,cat_emu_sr__bdt_wj_M95,cat_emu_sr__bdt_wj_M100,cat_emu_sr__bdt_wj_M105,cat_emu_sr__bdt_wj_M110,cat_emu_sr__bdt_wj_M115,cat_emu_sr__bdt_wj_M120,cat_emu_sr__bdt_wj_M125,cat_emu_sr__bdt_wj_M130,cat_emu_sr__bdt_wj_M135,cat_emu_sr__bdt_wj_M140,cat_emu_sr__bdt_wj_M160,cat_emu_sr__bdt_wj_M180,cat_emu_sr__bdt_wj_M200,cat_emu_sr__bdt_wj_M250,cat_emu_sr__bdt_wj_M300,cat_emu_sr__bdt_wj_M350,cat_emu_sr__bdt_wj_M400,cat_emu_sr__bdt_wj_M450,cat_emu_sr__bdt_wj_M500,cat_emu_sr__bdt_wj_M600,cat_emu_sr__bdt_wj_M700,cat_emu_sr__bdt_wj_M800,cat_emu_sr__bdt_wj_M900,cat_emu_sr__bdt_wj_M1000,cat_emu_sr__bdt_wj_M1100,cat_emu_sr__bdt_wj_M1200,cat_emu_sr__bdt_wj_M1400,cat_emu_sr__bdt_wj_M1600,cat_emu_sr__bdt_wj_M1800,cat_emu_sr__bdt_wj_M2000,cat_emu_sr__bdt_wj_M2300,cat_emu_sr__bdt_wj_M2600,cat_emu_sr__bdt_wj_M2900,cat_emu_sr__bdt_wj_M3200,cat_emu_sr__bdt_wj_M3500"
 categories_emu_lim="cat_emu_sr__nj0__dzl"
 #,cat_emu_sr_no_mT,cat_emu_sr_b_jets,cat_emu_sr_b_jets_no_mT,cat_emu_sr_0_bjets,cat_emu_sr_0_bjets_endcap_tau,cat_emu_sr_0_bjets_barrel_tau,cat_emu_sr_0_bjets_no_mt,cat_emu_sr_0_bjets_endcap_tau_no_mt,cat_emu_sr_0_bjets_barrel_tau_no_mt,cat_emu_sr_1_bjets,cat_emu_sr_1_bjets_endcap_tau,cat_emu_sr_1_bjets_barrel_tau,cat_emu_sr_1_bjets_no_mt,cat_emu_sr_1_bjets_endcap_tau_no_mt,cat_emu_sr_1_bjets_barrel_tau_no_mt,cat_emu_sr_2_bjets,cat_emu_sr_2_bjets_endcap_tau,cat_emu_sr_2_bjets_barrel_tau,cat_emu_sr_2_bjets_no_mt,cat_emu_sr_2_bjets_endcap_tau_no_mt,cat_emu_sr_2_bjets_barrel_tau_no_mt"
 categories_emu_qcd="cat_emu_ar_qcd,cat_emu_dr_num_qcd,cat_emu_dr_den_qcd"
-variables_emu='emu_mt_tot_fit,emu_mt_tot,emu_mt_emu,D_zeta,emu_mt_e,emu_mt_mu,N_jets_pT_20_eta_4_7_Tight,leading_jet_eta,subleading_jet_eta,leading_jet_phi,subleading_jet_phi,N_b_jets,N_jets_pT_20_eta_4_7_Tight,leading_jet_pt,subleading_jet_pt,delta_eta_jj,emu_lep0_pt,emu_lep0_eta,emu_lep0_phi,emu_lep0_ip_sig,emu_lep1_pt,emu_lep1_eta,emu_lep1_phi,emu_lep1_ip_sig,emu_mvis,emu_delta_r,emu_pt,puppi_met_pt,puppi_met_phi'
+variables_emu='bdt_raw_score_sig_M60,bdt_raw_score_sig_M65,bdt_raw_score_sig_M70,bdt_raw_score_sig_M75,bdt_raw_score_sig_M80,bdt_raw_score_sig_M85,bdt_raw_score_sig_M90,bdt_raw_score_sig_M95,bdt_raw_score_sig_M100,bdt_raw_score_sig_M105,bdt_raw_score_sig_M110,bdt_raw_score_sig_M115,bdt_raw_score_sig_M120,bdt_raw_score_sig_M125,bdt_raw_score_sig_M130,bdt_raw_score_sig_M135,bdt_raw_score_sig_M140,bdt_raw_score_sig_M160,bdt_raw_score_sig_M180,bdt_raw_score_sig_M200,bdt_raw_score_sig_M250,bdt_raw_score_sig_M300,bdt_raw_score_sig_M350,bdt_raw_score_sig_M400,bdt_raw_score_sig_M450,bdt_raw_score_sig_M500,bdt_raw_score_sig_M600,bdt_raw_score_sig_M700,bdt_raw_score_sig_M800,bdt_raw_score_sig_M900,bdt_raw_score_sig_M1000,bdt_raw_score_sig_M1100,bdt_raw_score_sig_M1200,bdt_raw_score_sig_M1400,bdt_raw_score_sig_M1600,bdt_raw_score_sig_M1800,bdt_raw_score_sig_M2000,bdt_raw_score_sig_M2300,bdt_raw_score_sig_M2600,bdt_raw_score_sig_M2900,bdt_raw_score_sig_M3200,bdt_raw_score_sig_M3500,bdt_raw_score_dy_M60,bdt_raw_score_dy_M65,bdt_raw_score_dy_M70,bdt_raw_score_dy_M75,bdt_raw_score_dy_M80,bdt_raw_score_dy_M85,bdt_raw_score_dy_M90,bdt_raw_score_dy_M95,bdt_raw_score_dy_M100,bdt_raw_score_dy_M105,bdt_raw_score_dy_M110,bdt_raw_score_dy_M115,bdt_raw_score_dy_M120,bdt_raw_score_dy_M125,bdt_raw_score_dy_M130,bdt_raw_score_dy_M135,bdt_raw_score_dy_M140,bdt_raw_score_dy_M160,bdt_raw_score_dy_M180,bdt_raw_score_dy_M200,bdt_raw_score_dy_M250,bdt_raw_score_dy_M300,bdt_raw_score_dy_M350,bdt_raw_score_dy_M400,bdt_raw_score_dy_M450,bdt_raw_score_dy_M500,bdt_raw_score_dy_M600,bdt_raw_score_dy_M700,bdt_raw_score_dy_M800,bdt_raw_score_dy_M900,bdt_raw_score_dy_M1000,bdt_raw_score_dy_M1100,bdt_raw_score_dy_M1200,bdt_raw_score_dy_M1400,bdt_raw_score_dy_M1600,bdt_raw_score_dy_M1800,bdt_raw_score_dy_M2000,bdt_raw_score_dy_M2300,bdt_raw_score_dy_M2600,bdt_raw_score_dy_M2900,bdt_raw_score_dy_M3200,bdt_raw_score_dy_M3500,bdt_raw_score_tt_M60,bdt_raw_score_tt_M65,bdt_raw_score_tt_M70,bdt_raw_score_tt_M75,bdt_raw_score_tt_M80,bdt_raw_score_tt_M85,bdt_raw_score_tt_M90,bdt_raw_score_tt_M95,bdt_raw_score_tt_M100,bdt_raw_score_tt_M105,bdt_raw_score_tt_M110,bdt_raw_score_tt_M115,bdt_raw_score_tt_M120,bdt_raw_score_tt_M125,bdt_raw_score_tt_M130,bdt_raw_score_tt_M135,bdt_raw_score_tt_M140,bdt_raw_score_tt_M160,bdt_raw_score_tt_M180,bdt_raw_score_tt_M200,bdt_raw_score_tt_M250,bdt_raw_score_tt_M300,bdt_raw_score_tt_M350,bdt_raw_score_tt_M400,bdt_raw_score_tt_M450,bdt_raw_score_tt_M500,bdt_raw_score_tt_M600,bdt_raw_score_tt_M700,bdt_raw_score_tt_M800,bdt_raw_score_tt_M900,bdt_raw_score_tt_M1000,bdt_raw_score_tt_M1100,bdt_raw_score_tt_M1200,bdt_raw_score_tt_M1400,bdt_raw_score_tt_M1600,bdt_raw_score_tt_M1800,bdt_raw_score_tt_M2000,bdt_raw_score_tt_M2300,bdt_raw_score_tt_M2600,bdt_raw_score_tt_M2900,bdt_raw_score_tt_M3200,bdt_raw_score_tt_M3500,bdt_raw_score_wj_M60,bdt_raw_score_wj_M65,bdt_raw_score_wj_M70,bdt_raw_score_wj_M75,bdt_raw_score_wj_M80,bdt_raw_score_wj_M85,bdt_raw_score_wj_M90,bdt_raw_score_wj_M95,bdt_raw_score_wj_M100,bdt_raw_score_wj_M105,bdt_raw_score_wj_M110,bdt_raw_score_wj_M115,bdt_raw_score_wj_M120,bdt_raw_score_wj_M125,bdt_raw_score_wj_M130,bdt_raw_score_wj_M135,bdt_raw_score_wj_M140,bdt_raw_score_wj_M160,bdt_raw_score_wj_M180,bdt_raw_score_wj_M200,bdt_raw_score_wj_M250,bdt_raw_score_wj_M300,bdt_raw_score_wj_M350,bdt_raw_score_wj_M400,bdt_raw_score_wj_M450,bdt_raw_score_wj_M500,bdt_raw_score_wj_M600,bdt_raw_score_wj_M700,bdt_raw_score_wj_M800,bdt_raw_score_wj_M900,bdt_raw_score_wj_M1000,bdt_raw_score_wj_M1100,bdt_raw_score_wj_M1200,bdt_raw_score_wj_M1400,bdt_raw_score_wj_M1600,bdt_raw_score_wj_M1800,bdt_raw_score_wj_M2000,bdt_raw_score_wj_M2300,bdt_raw_score_wj_M2600,bdt_raw_score_wj_M2900,bdt_raw_score_wj_M3200,bdt_raw_score_wj_M3500,emu_mt_tot_fit,emu_mt_tot,emu_mt_emu,D_zeta,emu_mt_e,emu_mt_mu,N_jets_pT_20_eta_4_7_Tight,leading_jet_eta,subleading_jet_eta,leading_jet_phi,subleading_jet_phi,N_b_jets,N_jets_pT_20_eta_4_7_Tight,leading_jet_pt,subleading_jet_pt,delta_eta_jj,emu_lep0_pt,emu_lep0_eta,emu_lep0_phi,emu_lep0_ip_sig,emu_lep1_pt,emu_lep1_eta,emu_lep1_phi,emu_lep1_ip_sig,emu_mvis,emu_delta_r,emu_pt,puppi_met_pt,puppi_met_phi'
 #mjj
 data_egamma_2022preEE='data_egamma_C,data_egamma_D,'
 data_muoneg_2022preEE='data_muoneg_C,data_muoneg_D,'
-data_mu_2022preEE='data_mu_C,data_mu_D,data_singlemu_C,'
+data_mu_2022preEE='data_mu_D,data_singlemu_C,data_mu_C,'
 
 data_egamma_2022postEE='data_egamma_E,data_egamma_F,data_egamma_G,'
 data_muoneg_2022postEE='data_muoneg_E,data_muoneg_F,data_muoneg_G,'
@@ -40,6 +40,7 @@ data_muoneg_2023postBPix='data_muoneg_D,'
 data_mu_2023preBPix='data_mu_Cv4,data_mu_Cv123,'
 data_mu_2023postBPix='data_mu_D,'
 
+categories_emu_no_data_no_qcd="cat_emu_sr,cat_cat_emu_sr__bdt_sig_M100"
 case $1 in
 ################################
 ####### 2022preEE_limited ######
@@ -56,9 +57,21 @@ case $1 in
         config="run3_2022_preEE_emu_limited"	
         datasets='dy_lep_madgraph,wj_incl_madgraph,data_egamma_C,' 
         processes='dy_lep,wj,data,' 
-	    categories='cat_emu_sr__bdt_sig'
+	    categories='cat_emu_sr__bdt_sig,cat_emu_sr__bdt_dy,cat_emu_sr__bdt_tt,cat_emu_sr__bdt_wj'
 	    variables='pt_H,hcand_emu_fastMTT_mass,bdt_raw_score_sig,bdt_raw_score_dy,bdt_raw_score_tt,bdt_raw_score_wj'
         workflow='local'
+    ;;
+    "run3_2022preEE_emu_lim_100")
+        config="run3_2022_preEE_emu_limited"
+        data=$data_egamma_2022preEE$data_mu_2022preEE
+        bkg_ewk=$bkg_ewk
+        bkg_top=$bkg_top
+        bkg_ttbar=$bkg_ttbar
+        datasets=$data$bkg_ewk$bkg_top$bkg_ttbar$mssm_signal_100
+        processes='dy_lep,vv,tt,st,wj,data,h_ggf_htt_100'
+	    categories=$categories_emu
+	    variables=$variables_emu
+	    workflow='local'
     ;;
     "run3_2022preEE_mutau_lim")
         config="run3_2022_preEE_mutau_limited"	
@@ -83,6 +96,17 @@ case $1 in
 	      variables=$variables_etau
         workflow='htcondor'
     ;;
+    "run3_2022preEE_emu_no_data_no_qcd")
+        config="run3_2022_preEE_emu"
+        bkg_ewk=$bkg_ewk
+        bkg_top=$bkg_top
+        bkg_ttbar=$bkg_ttbar
+        datasets=$bkg_ewk$bkg_top$bkg_ttbar$mssm_signal
+        processes='dy_lep,vv,tt,st,wj,h_ggf_htt_masses'
+	    categories=$categories_emu
+	    variables=$variables_emu
+	    workflow='local'
+    ;;
     "run3_2022preEE_emu")
         config="run3_2022_preEE_emu"
         data=$data_egamma_2022preEE$data_mu_2022preEE
@@ -94,6 +118,59 @@ case $1 in
 	    categories=$categories_emu
 	    variables=$variables_emu
 	    workflow='htcondor'
+    ;;
+    "run3_2022preEE_emu_lim_var")
+        config="run3_2022_preEE_emu"
+        data=$data_egamma_2022preEE$data_mu_2022preEE
+        bkg_ewk=$bkg_ewk
+        bkg_top=$bkg_top
+        bkg_ttbar=$bkg_ttbar
+        datasets=$data$bkg_ewk$bkg_top$bkg_ttbar$mssm_signal
+        processes='dy_lep,vv,tt,st,wj,data,h_ggf_htt_masses'
+	    categories='cat_emu_sr,cat_emu_sr__bdt_sig_M100,cat_emu_sr__bdt_dy_M100,'`
+        `'cat_emu_sr__bdt_tt_M100,cat_emu_sr__bdt_wj_M100'
+	    variables='bdt_raw_score_sig_M100,bdt_raw_score_dy_M100,bdt_raw_score_tt_M100,bdt_raw_score_wj_M100'
+	    workflow='htcondor'
+    ;;
+    "run3_2022preEE_emu_nodata")
+        config="run3_2022_preEE_emu"
+        data=$data_egamma_2022preEE$data_mu_2022preEE
+        bkg_ewk=$bkg_ewk
+        bkg_top=$bkg_top
+        bkg_ttbar=$bkg_ttbar
+        datasets=$bkg_ewk$bkg_top$bkg_ttbar$mssm_signal_100
+        processes='dy_lep,vv,tt,st,wj,h_ggf_htt_100'
+	    categories=$categories_emu
+	    variables='bdt_raw_score_sig'
+	    workflow='htcondor'
+    ;;
+    "run3_2022preEE_emu_100")
+        config="run3_2022_preEE_emu"
+        data=$data_egamma_2022preEE$data_mu_2022preEE
+        bkg_ewk=$bkg_ewk
+        bkg_top=$bkg_top
+        bkg_ttbar=$bkg_ttbar
+        datasets=$data$bkg_ewk$bkg_top$bkg_ttbar$mssm_signal_100
+        processes='dy_lep,vv,tt,st,wj,data,h_ggf_htt_100'
+	    categories="bdt_raw_score_dy_M100,bdt_raw_score_sig_M100,bdt_raw_score_tt_M100,bdt_raw_score_wj_M100"
+	    variables=$variables_emu
+	    workflow='htcondor'
+    ;;
+    "run3_2022preEE_emu_data")
+        config="run3_2022_preEE_emu"
+        datasets='data_egamma_C,data_egamma_D,data_singlemu_C' 
+        processes='data_egamma,data_singlemu'
+	    categories="cat_emu_sr"
+	    variables='bdt_raw_score_sig_M100'
+	    workflow='htcondor'
+    ;;
+    "run3_2022preEE_emu_check")
+        config="run3_2022_preEE_emu"
+        datasets='data_egamma_C'
+        processes='data_egamma'
+	    categories='cat_emu_sr'
+	    variables='bdt_raw_score_sig'
+	    workflow='local'
     ;;
     "run3_2022preEE_emu_FF")
         config="run3_2022_preEE_emu"
